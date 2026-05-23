@@ -1,0 +1,73 @@
+.card {
+    padding: 2rem;
+    border-radius: 15px;
+    background: rgb(230, 221, 209);
+    box-shadow: 0px 0px 10px rgb(186, 181, 161);
+    height: 25rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image {
+    width: 100%;
+    height: 50%;
+}
+
+.image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    text-align: center;
+    font-size: 1.1rem;
+    height: 2.8rem;
+}
+
+.counter {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.counter > *, .card > button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 0px 0px 5px rgb(198, 189, 164);
+}
+
+.counter button {
+    width: 2rem;
+}
+
+.card input {
+    text-align: center;
+    width: 6rem;
+}
+
+.card input::-webkit-outer-spin-button,
+.card input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.card > button {
+    width: 7rem;
+}
+
+.card button:hover {
+    scale: 0.95;
+}

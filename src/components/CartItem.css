@@ -1,0 +1,55 @@
+.cartItem {
+    height: 15rem;
+    display: flex;
+    padding: 2rem;
+    border-bottom: solid 1px black;
+    gap: 2rem;
+    position: relative;
+}
+
+.cartItem img {
+    height: 100%;
+    width: 15%;
+    object-fit: contain;
+}
+
+.cartItem > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cartTitle {
+    font-size: 1.5rem;
+}
+
+.cartPrice {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.subtotal {
+    font-size: 1.2rem;
+}
+
+.cartItem .counter p {
+    width: 2rem;
+    text-align: center;
+    box-shadow: none;
+}
+
+.cartItem button:hover {
+    scale: 0.95;
+}
+
+.removeItem {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 2rem;
+}
+
+.removeItem:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(239, 232, 218);
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#main > div:last-child {
+    font-family: 'Elms Sans';
+}
+
+#navbar {
+    height: 4rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Gravitas One';
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+
+#navbar > * {
+    text-decoration: none;
+    color: rgb(95, 83, 69);
+}
+
+#navbar > *:hover {
+    text-decoration: underline;
+}

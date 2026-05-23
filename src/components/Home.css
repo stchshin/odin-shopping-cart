@@ -1,0 +1,43 @@
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem);
+}
+
+#home > div {
+    background: rgb(230, 221, 209);
+    box-shadow: 0px 0px 10px rgb(186, 181, 161);
+    width: 40rem;
+    height: 15rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: 2s home 1;
+}
+
+#home > div > p:first-child {
+    font-family: 'Gravitas One';
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(66, 60, 45);
+}
+
+#home > div > p:last-child {
+    font-family: 'Elms Sans';
+    font-size: 1.2rem;
+    color: rgb(140, 128, 97);
+}
+
+@keyframes home {
+  from {
+    transform: translateY(20%);
+    opacity: 0
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

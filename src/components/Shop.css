@@ -1,0 +1,23 @@
+#shop {
+    width: 100%;
+}
+
+#shop > p {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+#shop > div {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 3rem;
+    padding: 4rem;
+}
+
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem);
+}
